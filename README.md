@@ -1,6 +1,6 @@
 # Yelp Camp
 
-Yelp Camp is a full-stack web development project that allows users to discover, review, and share campgrounds. It is built using HTML, CSS, Node.js, EJS, JavaScript, MongoDB, and Cloudinary for image uploads. The project incorporates authentication and authorization features to ensure secure user interactions.
+Yelp Camp is a full-stack web development project that allows users to discover, review, and share campgrounds. It is built using HTML, CSS, Node.js, EJS, JavaScript, MongoDB, and Cloudinary for image uploads. The project incorporates authentication and authorization features to ensure secure user interactions, including a review system.
 
 ![Yelp Camp Screenshot]((https://ibb.co/10C6dX6))
 ![Yelp Camp Screenshot](https://ibb.co/sjx4qS8)
@@ -15,20 +15,17 @@ Yelp Camp is a full-stack web development project that allows users to discover,
 - [Usage](#usage)
 - [Authentication and Authorization](#authentication-and-authorization)
 - [CRUD Operations](#crud-operations)
+- [Review System](#review-system)
 - [Image Upload with Cloudinary](#image-upload-with-cloudinary)
 - [Contributing](#contributing)
 - [License](#license)
-
-## Demo
-
-You can explore a live demo of Yelp Camp [here](https://yelp-camp-demo.com).
 
 ## Features
 
 - User Authentication: Users can sign up and log in securely.
 - Authorization: Different user roles (e.g., admin, regular user) with appropriate permissions.
 - Campground Management: Create, read, update, and delete campgrounds.
-- Campground Reviews: Users can leave reviews and ratings for campgrounds.
+- Review System: Users can leave detailed reviews and ratings for campgrounds.
 - Image Upload: Upload images of campgrounds to make them more appealing.
 - Search and Filter: Find campgrounds by name or location.
 - Responsive Design: The application is mobile-friendly for users on the go.
@@ -48,4 +45,4 @@ You can explore a live demo of Yelp Camp [here](https://yelp-camp-demo.com).
 1. Clone the repository:
 
    ```bash
-   git clone https://github
+   git clone https://github.com/yourusername/yelp-camp.git
