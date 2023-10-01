@@ -13,6 +13,9 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 const ErrorClass = require('./utilities/errorClass');
+// if(process.env.NODE_ENV !== "production"){
+    
+// }
 
 mongoose.connect('mongodb://0.0.0.0:27017/yelp-camp', {
     useNewUrlParser: true,
@@ -64,7 +67,9 @@ app.use('/', userRoutes);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-
+app.get('/', (req, res)=>{
+    res.render('home.ejs');
+})
 
 app.all('*', (req,res,next)=>{
     next(new ErrorClass('Page Not Found', 404));

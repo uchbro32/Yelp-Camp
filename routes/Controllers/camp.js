@@ -11,6 +11,7 @@ module.exports.Index = async(req, res)=>{
 }
 module.exports.NewPost = async(req, res, next)=>{
     const campground = new Campground(req.body.campground);
+    campground.image = req.files.map(f => ({ url: f.path, filename: f.filename }));
     campground.author = req.user._id;
     await campground.save();
     req.flash('success', 'Successfully made a new campground!');
@@ -23,15 +24,6 @@ module.exports.Edit = async(req, res)=>{
         res.redirect('/campgrounds');
     }
     res.render('edit.ejs', {camp});
-}
-module.exports.Patch = async(req, res, next)=>{
-    await Campground.findByIdAndUpdate(req.params.id, req.body);
-    if(!camp){
-        req.flash('error', 'Cannot find that campground!!');
-        return res.redirect('/campgrounds');
-    }
-    req.flash('success', 'Successfully updated you campground!!');
-    res.redirect(`/campgrounds/${req.params.id}`);
 }
 module.exports.Delete = async(req, res)=>{
     await Campground.findByIdAndDelete(req.params.id);
