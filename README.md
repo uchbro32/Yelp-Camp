@@ -2,9 +2,10 @@
 
 Yelp Camp is a full-stack web development project that allows users to discover, review, and share campgrounds. It is built using HTML, CSS, Node.js, EJS, JavaScript, MongoDB, and Cloudinary for image uploads. The project incorporates authentication and authorization features to ensure secure user interactions, including a review system.
 
-![Yelp Camp Screenshot]((https://ibb.co/10C6dX6))
-![Yelp Camp Screenshot](https://ibb.co/sjx4qS8)
-![Yelp Camp Screenshot](https://ibb.co/VWQt3Yn)
+![Yelp Camp Screenshot](https://i.ibb.co/N2HBsNW/1.png)
+![Yelp Camp Screenshot](https://i.ibb.co/rZPg1RG/3.png)
+![Yelp Camp Screenshot](https://i.ibb.co/j89P5Md/4.png)
+![Yelp Camp Screenshot](https://i.ibb.co/4ZY7JRv/6.png)
 
 ## Table of Contents
 
